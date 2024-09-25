@@ -1,0 +1,106 @@
+/* Import Leaflet CSS */
+@import url('~leaflet/dist/leaflet.css');
+
+/* Set styles for Leaflet map container */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Define styles for the map container */
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Additional styles for the left map */
+#left-map {
+  /* Reduce the size of the left map */
+  width: 60%;
+  height: 75%; /* Adjust the width as needed */
+}
+
+/* Additional styles for the right map */
+#right-map {
+  /* Reduce the size of the right map */
+  width: 40%; /* Adjust the width as needed */
+  height: 75%;
+}
+
+/* Define styles for the container */
+.container {
+  width: 100%;
+  position: relative; /* Required for absolute positioning of button */
+}
+
+/* Define styles for the content */
+.content {
+  display: flex; /* Ensure that the content divs are aligned properly */
+  margin-top: 20px; /* Adjust as needed for spacing between h1 and content */
+}
+
+/* Styles for display-address */
+.display-address {
+  float: right;
+  width: 45%;
+  margin-left: 20px;
+}
+
+/* Styles for locality */
+.locality {
+  float: left;
+  width: 45%;
+  margin-left: 20px;
+}
+
+/* Styles for the button wrapper */
+.button-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Define styles for the map container */
+.map-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow maps and button to wrap */
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Define styles for each map */
+.map {
+  flex: 1; /* Each map takes up equal space */
+  margin: 10px;
+  height: calc(50% - 20px); /* Adjust height to fit within the container */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Define styles for the button */
+#my-button {
+  flex-basis: 100%; /* Button takes up full width */
+  margin: 10px;
+}
+
+.form {
+  border: 2px solid #ccc; /* Make border thicker for visibility */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#form-submit {
+  border-color: blue;
+}
+
+#form-save {
+  border-color: green;
+}
+
+#form-update {
+  border-color: red;
+}
